@@ -8,6 +8,8 @@ npm init
 ```
 * Install `express` to create server
 * Install `graphql`, `graphql-tools`
+* `npm install -g mongoose`
+* `npm install sqlite3 sequelize lodash casual`
 
 
 ## Constructing Types
