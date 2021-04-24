@@ -8,6 +8,7 @@ const typeDefs  = `
         lastName: String
         gender: Gender
         language: String
+        age: Int
         email: String
         contacts: [Contact]
     }
@@ -40,6 +41,7 @@ const typeDefs  = `
         lastName: String
         gender: Gender
         language: String
+        age: Int
         email: String
         contacts: [ContactInput]
     }
@@ -51,6 +53,8 @@ const typeDefs  = `
 
     type Mutation {
         createFriend(input: FriendInput) : Friend
+        updateFriend(input: FriendInput) : Friend
+        deleteFriend(id: ID!): String
     }
 `;
 

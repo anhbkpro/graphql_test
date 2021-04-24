@@ -34,7 +34,7 @@ const friendSchema = new mongoose.Schema({
     }
 });
 
-const Friends = mongoose.Model('friends', friendSchema);
+const Friends = mongoose.model('friends', friendSchema);
 
 // SQL
 const sequelize = new Sequelize('database', null, null, {

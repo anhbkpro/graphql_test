@@ -1,0 +1,24 @@
+mutation {
+  createFriend(input: {
+    firstName: "Manu", 
+    lastName: "Henry", 
+    email: "me2@me.com", 
+    age: 45}) {
+    id
+  }
+}
+
+mutation {
+  updateFriend(input: {
+    id: "60841b2c3d3dc93d9895bf28", 
+    age: 42
+  }) {
+    id
+    age
+  }
+}
+
+
+mutation {
+  deleteFriend(id: "60841b2c3d3dc93d9895bf28")
+}
